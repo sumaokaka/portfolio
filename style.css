@@ -120,6 +120,19 @@
     height: auto;
     transform: translate(-50%, -50%);
   }
+  .tool_item{
+    font-size: 25px; /* 文字の大きさ */
+    font-weight: bold; /* 太字にする */
+    
+  }
+  .tool_icon img{
+    display: inline-block;
+    width: 50px; /* アイコンのサイズ調整 */
+    height: auto;
+    margin-right: 10px; /* アイコン間の余白 */
+    vertical-align: middle; /* 位置を揃える */
+
+  }
   
   .myProfile__description {
     margin-top: 16px;
@@ -128,7 +141,6 @@
   }
 
   .keireki{
-    max-width: 400px;
     margin: 0 auto; /* 中央配置 */
     line-height: 2;
     white-space: pre-line;
