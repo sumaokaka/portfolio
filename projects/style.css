@@ -1,0 +1,213 @@
+:root {
+    /*  basic colors  */
+    --color-black: #2a3132;
+    --color-blue-1: #336b87;
+    --color-blue-2: #90afc5;
+    --color-gray-1: #f2f2f2;
+    --color-gray-2: #cbcbcb;
+    --color-gray-3: #8a8a8a;
+    --color-white: #ffffff;
+    
+    --transition-duration: 0.2s;
+    --transition-timing-function: ease-in-out;
+  
+    color: var(--color-black);
+    font: 16px/1.5 Helvetica, Arial, Roboto, "Hiragino Kaku Gothic ProN",
+      "Hiragino Sans", "Noto Sans CJK JP", sans-serif;
+  }
+  
+  body {
+    background-color: var(--color-gray-1);
+  }
+  
+  .topBanner {
+    background-color: var(--color-blue-1);
+    color: var(--color-white);
+  }
+  
+  .topBanner__inner {
+    position: relative;
+    padding: 80px;
+  }
+  
+  .topBanner__title {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+
+  .pageContent {
+    margin: 72px auto 0;
+    padding: 0 16px;
+    max-width: 672px;
+  }
+  
+  .pageContent__item + .pageContent__item {
+    margin-top: 64px;
+  }
+  
+  .sectionItem__headingItem {
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 0.05em;
+  }
+  
+  .sectionItem__headingItemInner {
+    display: inline-block;
+    padding: 4px 8px;
+    border-bottom: 2px solid var(--color-blue-1);
+  }
+  
+  .sectionItem__content {
+    margin-top: 40px;
+  }
+  
+  .myProfile__name {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;;/* 太字 */
+  }
+  
+  
+  
+  .myProfile__description {
+    margin-top: -20px;
+    line-height: 2;/* 行間 */
+    white-space: pre-line;
+  }
+  
+  .cardList__items {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -16px 0 0 -16px;
+  }
+  
+  .cardList__item {
+    display: flex;
+    flex-shrink: 1;
+    width: 100%;
+  }
+  
+  @media (min-width: 597px) {
+    .cardList__item {
+      width: 50%;
+    }
+  }
+  
+  .cardList__itemLink {
+    display: flex;
+    flex-grow: 1;
+    overflow: hidden;
+    margin: 16px 0 0 16px;
+    border-radius: 4px;
+    background-color: var(--color-white);
+  }
+  
+  .cardList__itemLayout {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    flex-grow: 1;
+  }
+  .itemtitle {
+    margin-top: 20px; /* 上部に20pxの余白 */
+    font-weight: bold; /* 太字にする */
+    font-size: 20px; /* 文字サイズを20pxに指定 */
+  }
+  
+  
+  .cardList__itemLayoutThumbnail {
+    margin: -16px -16px 0;
+  }
+  .cardList__itemLayoutInfo {
+    margin-top: 16px;
+    flex-grow: 1;
+  }
+  
+  .cardList__itemThumbnail {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+    background-color: var(--color-gray-2);
+  }
+  
+  .cardList__itemThumbnailImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-duration) var(--transition-timing-function);
+  }
+  
+  .cardList__itemLink:hover .cardList__itemThumbnailImage {
+    transform: scale(1.1);
+  }
+  
+  .cardList__itemInfo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  .cardList__itemInfoFooter {
+    margin-top: auto;
+    padding-top: 8px;
+  }
+  
+  .cardList__itemDate {
+    color: var(--color-gray-3);
+    font-size: 14px;
+  }
+  
+  .cardList--vertical .cardList__items {
+    display: block;
+  }
+  
+  .cardList--vertical .cardList__item {
+    width: auto;
+  }
+  
+  .cardList--vertical .cardList__itemLayout {
+    flex-direction: initial;
+  }
+  
+  .cardList--vertical .cardList__itemLayoutThumbnail {
+    margin: initial;
+    flex-shrink: 1;
+    min-width: 96px;
+    width: 25%;
+    max-width: 144px;
+  }
+  
+  @media (min-width: 375px) {
+    .cardList--vertical .cardList__itemLayoutThumbnail {
+      min-width: 120px;
+    }
+  }
+  
+  @media (min-width: 597px) {
+    .cardList--vertical .cardList__itemLayoutThumbnail {
+      min-width: 144px;
+    }
+  }
+  
+  .cardList--vertical .cardList__itemLayoutInfo {
+    margin-top: initial;
+    margin-left: 16px;
+  }
+  
+  .globalFooter {
+    width: 100vw;
+    margin-top: 72px;
+    padding: 8px;
+    background-color: var(--color-black);
+    color: var(--color-white);
+    text-align: center;
+    font-size: 12px;
+  }
+  

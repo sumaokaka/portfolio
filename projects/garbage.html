@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="topBanner">
+      <div class="topBanner__inner">
+        <h1 class="topBanner__title">Portfolio</h1>
+        
+      </div>
+    </div>
+    <div class="pageContent">
+      <div class="pageContent__item">
+        <div class="sectionItem">
+          <div class="sectionItem__heading">
+            <h2 class="sectionItem__headingItem">
+                奈良公園に設置するIoTごみ箱
+            </h2>
+          </div>
+          <div class="sectionItem__content">
+            <div class="myProfile">
+              <p class="myProfile__name">目的</p>      
+              <p class="myProfile__description">
+                授業でIoTを活用した環境問題の解決がテーマで課題に取り組むこととなり，観光地である奈良公園のペットボトルのポイ捨て等のゴミの不法投棄の問題の解決に取り組むことになった．奈良公園では，鹿がゴミ箱を破壊したり倒したりするため，ゴミ箱があまり置かれていないということに着目し，IoTを活用してそれらの問題を解決するゴミ箱を制作する．
+              <p class="myProfile__name">ゴミ箱の機能</p>  
+              <p class="myProfile__description">
+                ・鹿が嫌う音を出す
+                ・ゴミ箱が倒れると管理者に通知が行くシステム
+                ・AIを活用したペットボトルの判定システム
+                ・Webアプリで鹿せんべいの引換券などの報酬が得られるようなシステム
+              </p>
+              <p class="myProfile__name">自分の担当部分</p>
+              <p class="myProfile__description">
+                M5Stackを使って加速度センサでゴミ箱の転倒を検知
+                転倒を検知したら，LINE Notifyを利用して管理者にLINE通知が行くシステム
+              </p>
+              <p class="myProfile__name">現状の成果</p>
+              <p class="myProfile__description">
+                M5stackの加速度センサーから姿勢角を計算
+                <img src="photo/pitch&roll.png" width="560" height="215" style="display: block; margin: auto;">
+                M5Stackが傾くとM5Stackの画面に「HELP!」を表示
+                <img src="photo/help.png" width="560" height="220" style="display: block; margin: auto;">
+                <img src="photo/M5Stack.jpg" width="520" height="550" style="display: block; margin: auto;">
+                <p>プログラムは<a href="https://github.com/sumaokaka/AL_M5Stack" target=”_blank”>こちら</a></p>
+                
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <footer class="globalFooter">
+      <p>Copyright 2025 Sarasa Takaoka Released under the MIT license</p>
+    </footer>
+  </body>
+</html>
