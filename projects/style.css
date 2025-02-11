@@ -70,7 +70,40 @@
     font-size: 25px;
     font-weight: bold;;/* 太字 */
   }
-  
+    .bar-container {
+    margin-bottom: 10px;
+}
+.bar-label {
+    margin-bottom: 5px;
+}
+.bar {
+    width: 100%;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 25px;
+}
+.bar-fill {
+    height: 100%;
+    text-align: right;
+    padding-right: 5px;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+/* 色を指定 */
+.html { background-color: #f16529; width: 30%; } /* 90% */
+.css { background-color: #2965f1; width: 25%; } /* 85% */
+.javascript { background-color: #f7df1e; color: black; width: 20%; } /* 70% */
+.python { background-color: #306998; width: 20%; } /* 60% */
+.java { background-color: #810061; width: 70%; } /* 50% */
+.Cplusplus { background-color: #3984ba; width: 40%; } /* 50% */
+.VisualBasic { background-color: #0f662d; width: 25%; } /* 50% */
+.Ruby { background-color: #c51010; width: 25%; } /* 50% */
+.Arduino { background-color: #164f95; width: 60%; } /* 50% */
+.M5Stack { background-color: #5e5e5e; width: 50%; } /* 50% */
+.RaspberryPi { background-color: #a01435; width: 50%; } /* 50% */
   
   
   .myProfile__description {
